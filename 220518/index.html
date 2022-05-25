@@ -8,15 +8,29 @@
   <title>グリッドレイアウト</title>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-    <div class="col border"><h1>メニュー！！！</h1></div>
+<header>
+  <nav class="navbar navbar-expand-lg" style="background-color: #000000;">
+    <a class="navbar-brand" href="#">〇〇堂</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">ホーム<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">トピック</a>
+        <a class="nav-item nav-link" href="#">サポート</a>
+        <a class="nav-item nav-link disabled" href="#">ログイン</a>
+      </div>
     </div>
+  </nav>
+</header>
+  <div class="container">
+
 
     <br>
 
    <div class="row">
-        <div class="col-8 border"><h1>記事の題名</h1>
+        <div class="col-8 border" ><h1>記事の題名</h1>
           <p>
             <hr>
             内容がたくさんかいてあった！<br>
@@ -37,45 +51,44 @@
             <div class="col border">
               <p>関連リンク
                 <ul>
-                  リンク１<br>
+                  リンク１
                   りんく２
                 </ul>
-              </p>
             </div>
-          </p>
+
         </div>
 
           <div class="col-1"></div>
 
-            <div class="col-3 border"><h1>新着記事</h1>
+            <div class="col-3 border" style="background-color: #f5f5f5;"><h1>新着記事</h1>
                <p>
                  <div class="card">
                     <div class="card-body">
                     <h1>記事１</h1>
                     </div>
                  </div>
-               </p>
+
                <p>
                  <div class="card">
                      <div class="card-body">
                          <h1>記事２</h1>
                      </div>
                  </div>
-               </p>
+
               <p>
               <div class="card">
                 <div class="card-body">
                   <h1>記事３</h1>
                 </div>
               </div>
-              </p>
+
               <p>
               <div class="card">
                 <div class="card-body">
                   <h1>記事４</h1>
                 </div>
               </div>
-              </p>
+
             </div>
 
    </div>
@@ -83,42 +96,58 @@
     <div class="row">
       <div class="col-8"></div>
       <div class="col-1"></div>
-    <div class="col-3 border"><h1>ランキング</h1>
+    <div class="col-3 border" style="background-color: #f5f5f5;"><h1>ランキング</h1>
       <p>
       <div class="card">
         <div class="card-body">
           <h1>記事①</h1>
         </div>
       </div>
-      </p>
+
       <p>
       <div class="card">
         <div class="card-body">
           <h1>記事②</h1>
         </div>
       </div>
-      </p>
+
     </div>
     </div>
     <br>
     <h3>この記事を読んだ人はこんな記事も読んでます。</h3>
     <div class="row">
-      <div class="col border"><h1>記事a</h1></div>
-      <div class="col border"><h1>記事b</h1></div>
-      <div class="col border"><h1>記事c</h1></div>
-      <div class="col border"><h1>記事d</h1></div>
-      <div class="col border"><h1>記事e</h1></div>
+      <div class="col border"><h1 class="text-center">記事a</h1></div>
+      <div class="col border"><h1 class="text-center">記事b</h1></div>
+      <div class="col border"><h1 class="text-center">記事c</h1></div>
+      <div class="col border"><h1 class="text-center">記事d</h1></div>
+      <div class="col border"><h1 class="text-center">記事e</h1></div>
     </div>
 <br>
+    </div>
     <div class="row">
-      <div class="col border"><h1>メニュー！！</h1>
-      <p>
+      <div class="col border" style="background-color: #f5f5f5;" ><h1 class="text-center">メニュー！！</h1>
+      <p class="text-center">
         ここのメニューっていろんなところへすぐに飛べていいよね
-      </p>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col border"><h1 class="text-center">a</h1></div>
+          <div class="col border"><h1 class="text-center">b</h1></div>
+          <div class="col border"><h1 class="text-center">c</h1></div>
+          <div class="col border"><h1 class="text-center">d</h1></div>
+          <div class="col-1"></div>
+          </div>
+
+        <p>
+
+        </p>
       </div>
     </div>
 
 
-  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>
