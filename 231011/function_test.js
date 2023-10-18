@@ -1,14 +1,31 @@
-function ft1(am1,am2,am3){
-  console.log(`仮引数: ${am1}`);
-  console.log(`仮引数: ${am2}`);
-  console.log(`仮引数: ${am3}`);
+function logHello() {
+  console.log("logHello()を呼び出しました");
 }
 
-ft1(1,2,3);
-
-function ft2(am1 = "default"){
-  console.log(`仮引数: ${am1}`);
+function logArguments(arg1, arg2, arg3){
+  console.log(arg1);
+  console.log(arg2);
+  console.log(arg3);
 }
 
-ft2();
-ft2("カスタマイズした値");
+function logArgumentsWithDefault(arg1, arg2 = 'arg2デフォルトの値'){
+  console.log(arg1);
+  console.log(arg2);
+}
+
+// 2021 * 1010を返す関数
+function calc(){
+  return 2021 * 1010;
+}
+
+function multiply(a, b){
+  return a * b;
+}
+
+function multiplyOnesPlace(a, b){
+  return a * b % 10;
+}
+
+function multiplyTensPlace(a, b){
+  return parseInt(a * b % 100 / 10)
+}
