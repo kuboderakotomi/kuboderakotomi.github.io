@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScriptの練習</title>
+</head>
+<body>
+
+<h1>0から10000までの総和を計算する</h1>
+<p>
+<div id="q1"></div>
+<script>
+  let i = 0;
+  let sum = 0;
+  while(i <= 10000){
+    sum += i;
+    i++;
+  }
+  document.querySelector('#q1').innerHTML = sum;
+</script>
+</p>
+
+<h1>0から10000までを足していき、合計値が50000を超えた時の値を計算する</h1>
+<p>
+<div id="q2"></div>
+<script>
+  // i = 0;
+  // sum = 0;
+  // while(true){
+  //   sum += i;
+  //   if(sum > 50000){
+  //     document.querySelector('#q2').innerHTML = i;
+  //     break;
+  //   }
+  //   i++;
+  // }
+
+  // 別解
+  i = 0;
+  sum = 0;
+  while(true){
+    sum += i;
+    if(sum > 50000){
+      break;
+    }
+    i++;
+  }
+  document.querySelector('#q2').innerHTML = i;
+
+</script>
+</p>
+
+<h1>0から10000までを足していき、合計値が50000を超えた時の値を計算する</h1>
+<p>
+<div id="q3"></div>
+<script>
+  let element = document.querySelector('#q3');
+  i = 1;
+  while(i <= 100){
+    let output;
+
+    if(i % 3 == 0 && i % 5 == 0) {
+      output = 'FizzBuzz';
+    }else if(i % 3 == 0) {
+      output = 'Fizz';
+    }else if(i % 5 == 0){
+      output = 'Buzz';
+    }else{
+      output = i;
+    }
+
+    element.innerHTML += `${output}<br />`;
+    i++;
+  }
+</script>
+</p>
+</body>
+</html>

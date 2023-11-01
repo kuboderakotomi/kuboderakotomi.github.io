@@ -1,3 +1,10 @@
+let i = 0;
+let num = 0;
+while (i <= 10000) {
+  num += i;
+  i++;
+}
+
 let num = 1;
 while (true){
   num = num+1;
