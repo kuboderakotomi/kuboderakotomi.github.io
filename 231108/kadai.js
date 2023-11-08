@@ -1,24 +1,21 @@
-let fruitNames = ["りんご","みかん","いちご","いちじく"];
+let answer = document.querySelector('#answer');
+let outputHtml = `<ul>`;
 
-function fruit() {
-  let answer = document.querySelector('#answer');
-}
-
-let arr = ["りんご","みかん","いちご","いちじく"];
+//while版
 let i = 0;
-while(i < arr.length){
-  console.log(arr[i]);
+while(i < fruitNames.length){
+  outputHtml += `<li>${fruitNames[i]}</li>`;
   i++;
 }
 
-let lists = ["りんご","みかん","いちご","いちじく"];
-for(let i = 0; i < lists.length; i++){
-  console.log(lists[i]);
-}
+// outputHtmlを更新する処理を書く
+// for版
+//for(let i = 0;i < fruitNames.length;i++){
+//  outputHtml += `<li>${fruitNames[i]}</li>`;
+//}
 
-
-
-
+outputHtml += `</ul>`;
+answer.innerHTML = outputHtml;
 
 
 
