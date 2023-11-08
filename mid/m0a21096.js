@@ -10,14 +10,19 @@ while(i < tweets.length) {
 
 //button
 function showAll() {
-  let element = document.querySelector("#modal");
-  // 2. Elementオブジェクトの背景色スタイルを更新する
-  element.style.backgroundColor = "red";
+  let i = 0;
+  while (i < tweets.length) {
+    outputHtml += `<li>${tweets[i].avatar}<b>${tweets[i].name}</b>: ${tweets[i].message} <i>${tweets[i].tweetedAt}</i></li>`;
+    i++;
+  }
 }
+
 function showSaburo() {
-  let element = document.querySelector("#modal");
-  // 2. Elementオブジェクトの背景色スタイルを更新する
-  element.style.backgroundColor = "red";
+  let i = 0;
+  while (i < tweets.length) {
+    outputHtml += `<li>${tweets[i].avatar}<b>${tweets[i].name}</b>: ${tweets[i].message} <i>${tweets[i].tweetedAt}</i></li>`;
+    i++;
+  }
 }
 function showJiro() {
   let element = document.querySelector("#modal");
