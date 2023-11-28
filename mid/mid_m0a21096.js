@@ -5,7 +5,7 @@ function showAll() {
   outputHtml = `<div>`;
   let i = 0;
   while (i < tweets.length) {
-    outputHtml += `<div><img src="${tweets[i].avatar}" alt="${tweets[i].name}: avatar" style="width: 10%; height: 10%; border: solid 1px #777777;"> ${tweets[i].name}: ${tweets[i].message} <i>${tweets[i].tweetedAt}</i><hr>`;
+    outputHtml += `<div>　　<img src="${tweets[i].avatar}" alt="${tweets[i].name}: avatar" style="width: 5%; height: 5%; border: solid 1px #777777;"> <b>${tweets[i].name}:</b> ${tweets[i].message} <i>${tweets[i].tweetedAt}</i><hr>`;
     i++;
   }
   outputHtml += `</div>`;
@@ -17,7 +17,7 @@ function showSaburo() {
   let i = 0;
   while (i < tweets.length) {
     if (tweets[i].name === "三郎BOT") {
-      outputHtml += `<div><img src="${tweets[i].avatar}" alt="${tweets[i].name}: avatar" style="width: 10%; height: 10%; border: solid 1px #777777;"> ${tweets[i].name}: ${tweets[i].message} <i>${tweets[i].tweetedAt}</i><hr>`;
+      outputHtml += `<div>　　<img src="${tweets[i].avatar}" alt="${tweets[i].name}: avatar" style="width: 5%; height: 5%; border: solid 1px #777777;"> <b>${tweets[i].name}:</b> ${tweets[i].message} <i>${tweets[i].tweetedAt}</i><hr>`;
     }
     i++;
   }
@@ -30,7 +30,7 @@ function showJiro() {
   let i = 0;
   while (i < tweets.length) {
     if (tweets[i].name === "次郎") {
-      outputHtml += `<div><img src="${tweets[i].avatar}" alt="${tweets[i].name}: avatar" style="width: 10%; height: 10%; border: solid 1px #777777;"> ${tweets[i].name}: ${tweets[i].message} <i>${tweets[i].tweetedAt}</i><hr>`;
+      outputHtml += `<div>　　<img src="${tweets[i].avatar}" alt="${tweets[i].name}: avatar" style="width: 5%; height: 5%; border: solid 1px #777777;"> <b>${tweets[i].name}:</b> ${tweets[i].message} <i>${tweets[i].tweetedAt}</i><hr>`;
     }
     i++;
   }
@@ -43,7 +43,7 @@ function showTaro() {
   let i = 0;
   while (i < tweets.length) {
     if (tweets[i].name === "太郎") {
-      outputHtml += `<div><img src="${tweets[i].avatar}" alt="${tweets[i].name}: avatar" style="width: 10%; height: 10%; border: solid 1px #777777;"> ${tweets[i].name}: ${tweets[i].message} <i>${tweets[i].tweetedAt}</i><hr>`;
+      outputHtml += `<div>　　<img src="${tweets[i].avatar}" alt="${tweets[i].name}: avatar" style="width: 5%; height: 5%; border: solid 1px #777777;"> <b>${tweets[i].name}:</b> ${tweets[i].message} <i>${tweets[i].tweetedAt}</i><hr>`;
     }
     i++;
   }
