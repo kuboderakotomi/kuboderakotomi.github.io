@@ -4,9 +4,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta charset="UTF-8"><title>TUT学食</title>
+  <title>TUT学食</title>
 </head>
 
 <body>
@@ -22,32 +22,24 @@
 <br>
 <br>
 <br>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <p class="text-center">
-        <p>
-        <div class="card" style="width: 25rem;">
-          <div class="card-body">
-            <h4>全施設のメニューを一度に閲覧可能</h4>
-            <a class="btn btn-outline-primary btn-lg" href="menu.html" role="button">メニュー</a>
-          </div>
-        </div>
-
-        <p>
-        <div class="card" style="width: 25rem;">
-          <div class="card-body">
-            <h4>東京工科大学内にある昼食が取れる施設を紹介！</h4>
-            <a class="btn btn-outline-primary btn-lg" href="facility.html" role="button">施設一覧</a>
-          </div>
-        </div>
-
-    </div>
-  </div>
-</div>
+　<button onclick="showAll()">全メニュー</button>
+<button onclick="showCurry()">カレー</button>
+<button onclick="showPasta()">パスタ</button>
+<button onclick="showUdonsoba()">うどん・そば</button>
+<button onclick="showRamen()">ラーメン</button>
+<button onclick="showTeisyoku()">定食</button>
+<button onclick="showHigawari()">日替わり</button>
+<hr>
+<div id="modal"></div>
+<div id="answer"></div>
+<script>
+  let menu = [
+    { name: "カレー", price: "350円", where: "3階", png: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png" },
 
 
+  ]
+
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
