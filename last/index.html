@@ -21,19 +21,24 @@
 <br>
 <br>
 <br>
-　<button onclick="showMenu()">全メニュー</button>
-<button onclick="showCurry()">カレー</button>
-<button onclick="showPasta()">パスタ</button>
-<button onclick="showUdonsoba()">うどん・そば</button>
-<button onclick="showRamen()">ラーメン</button>
-<button onclick="showTeisyoku()">定食</button>
-<button onclick="showHigawari()">日替わり</button>
+<button onclick="showMenu('全メニュー')">全メニュー</button>
+<button onclick="showMenu('カレー')">カレー</button>
+<button onclick="showMenu('パスタ')">パスタ</button>
+<button onclick="showMenu('うどん・そば')">うどん・そば</button>
+<button onclick="showMenu('ラーメン')">ラーメン</button>
+<button onclick="showMenu('定食')">定食</button>
+<button onclick="showMenu('日替わり')">日替わり</button>
+
+<hr>
+
+<!-- メニュー表示エリア -->
+<div id="menuContainer"></div>
 <hr>
 <div id="modal"></div>
 <div id="answer"></div>
 <script>
   let menu = [
-    { name: "カレー", price: "350円", where: "厚生棟3階", png: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png" },
+    {name: "カレー", price: "350円", where: "厚生棟3階", png: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png" },
     { name: "カレー", price: "350円", where: "厚生棟4階", png: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png" },
     { name: "カツカレー", price: "350円", where: "厚生棟3階", png: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png" },
     { name: "カツカレー", price: "350円", where: "厚生棟3階", png: "https://morimorihoge.github.io/teu2019f/images/omocha_robot.png" },

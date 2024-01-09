@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TUT学食</title>
+  <link rel="stylesheet" href="styles.css"> <!-- CSSファイルへのリンク -->
+  <style>
+    .content-container {
+      margin-left: 20px;  /* 左側のマージン */
+      margin-right: 20px; /* 右側のマージン */
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- ヘッダー部分 -->
+<header class="site-header">
+  <div class="header-content container">
+    <div class="logo">
+      <img src="img/9934.png" alt="学食ロゴ" width="50" height="60">
+    </div>
+    <div class="title">TUT学食</div>
+    <nav class="main-navigation">
+      <ul>
+        　<li><a href="home.html" onclick="openTab('home')">ホーム</a></li>
+        <li><a href="menu.html" onclick="openTab('menu')">メニュー</a></li>
+        <li><a href="events.html" onclick="openTab('events')">イベントカレンダー</a></li>
+        <li><a href="location.html" onclick="openTab('location')">地図・場所情報</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- コンテンツ部分 -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- マージンを追加するための新しい<div> -->
+      <div class="content-container">
+        <br>
+        <br>
+        <br>
+        <br>
+        ホーム
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script> <!-- JavaScriptファイルへのリンク -->
+
+</body>
+</html>

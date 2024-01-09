@@ -12,7 +12,7 @@ function showMenu() {
   answer.innerHTML = outputHtml;
 }
 
-function showCurry() {
+function showRice() {
   outputHtml = `<div>`;
   let i = 0;
   while (i < menu.length) {
@@ -28,7 +28,7 @@ function showCurry() {
   answer.innerHTML = outputHtml;
 }
 
-function showPasta() {
+function showNoodle() {
   outputHtml = `<div>`;
   let i = 0;
   while (i < tweets.length) {
@@ -41,7 +41,7 @@ function showPasta() {
   answer.innerHTML = outputHtml;
 }
 
-function showTaro() {
+function showKitchin() {
   outputHtml = `<div>`;
   let i = 0;
   while (i < tweets.length) {

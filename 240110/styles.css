@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.main-navigation a {
+  color: #333; /* ナビゲーションリンクのデフォルトのテキスト色を黒に設定 */
+  text-decoration: none; /* 下線を削除 */
+}
+
+/* ナビゲーションメニューにホバー時のスタイルを追加 */
+.main-navigation a:hover {
+  color: #ffffcc; /* ホバー時のテキスト色を少し暗めの黒に設定 */
+  text-decoration: underline; /* ホバー時に下線を追加 */
+}
+
+
+.site-header {
+  background-color: #000066; /* ヘッダーの背景色を設定 */
+  color: white; /* ヘッダー上のテキスト色を黒に設定 */
+  padding: 10px 0; /* ヘッダーの内部余白を追加 */
+}
+
+/* ヘッダー内のコンテンツの配置とスタイリング */
+.header-content {
+  display: flex; /* Flexboxを使用して子要素を横並びに配置 */
+  align-items: center; /* 垂直方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
+}
+
+.logo {
+  margin-right: 10px; /* ロゴとタイトルの間のスペースを追加 */
+}
+
+.title {
+  font-size: 24px; /* タイトルのフォントサイズを設定 */
+}
+
+.main-navigation ul {
+  list-style-type: none; /* ナビゲーションリストのデフォルトのリストスタイルを削除 */
+  padding: 0;
+}
+
+.main-navigation ul li {
+  display: inline-block; /* ナビゲーション項目を水平に配置 */
+  margin-right: 20px; /* 各ナビゲーション項目の間のスペースを追加 */
+}
+
+.main-navigation ul li:last-child {
+  margin-right: 0; /* 最後のナビゲーション項目の右側のマージンを削除 */
+}
+
+.main-navigation a {
+  color: white; /* ナビゲーションリンクのテキスト色を設定 */
+  text-decoration: none; /* 下線を削除 */
+}
+
+.main-navigation a:hover {
+  text-decoration: underline; /* ホバー時に下線を追加 */
+}
+
+
+
+/* styles.css */
+
+/* アコーディオンスタイルの基本設定（青系統に変更） */
+.accordion {
+  background-color: #e6f7ff; /* 背景色を青系統に変更 */
+  color: #004d99;           /* テキスト色を濃い青に変更 */
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: 10px 0;
+}
+
+.active, .accordion:hover {
+  background-color: #b3d9ff; /* アクティブ時やホバー時の背景色を薄い青に変更 */
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #6699cc; /* アイコンの色を青系統に変更 */
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #e6f7ff; /* パネルの背景色を青系統に変更 */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.site-header {
+  position: fixed; /* ヘッダーを固定する */
+  width: 100%;     /* ヘッダーの幅を100%に */
+  top: 0;          /* 上端にヘッダーを配置 */
+  z-index: 1000;   /* 他の要素よりも上に表示 */
+}
+
+/* カードのスタイル */
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* カードを中央に配置 */
+}
+
+.menu-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* 中央揃え */
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.menu-card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.menu-card p {
+  margin: 0;
+  color: #777;
+}
+
+.blue-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blue-button:hover {
+  background-color: #0056b3;
+}
+

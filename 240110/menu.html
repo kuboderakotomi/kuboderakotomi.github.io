@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TUT学食</title>
+  <link rel="stylesheet" href="styles.css"> <!-- CSSファイルへのリンク -->
+  <style>
+    .content-container {
+      margin-left: 20px;  /* 左側のマージン */
+      margin-right: 20px; /* 右側のマージン */
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- ヘッダー部分 -->
+<header class="site-header">
+  <div class="header-content container">
+    <div class="logo">
+      <img src="img/9934.png" alt="学食ロゴ" width="50" height="60">
+    </div>
+    <div class="title">TUT学食</div>
+    <nav class="main-navigation">
+      <ul>
+        　<li><a href="home.html" onclick="openTab('home')">ホーム</a></li>
+        <li><a href="menu.html" onclick="openTab('menu')">メニュー</a></li>
+        <li><a href="events.html" onclick="openTab('events')">イベント</a></li>
+        <li><a href="location.html" onclick="openTab('location')">地図・場所情報</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- コンテンツ部分 -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="content-container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        　<!-- ボタンの追加 -->
+        <button class="blue-button" onclick="showMenu('全メニュー')">全メニュー</button>
+        <button class="blue-button" onclick="showMenu('カレー')">カレー</button>
+        <button class="blue-button" onclick="showMenu('パスタ')">パスタ</button>
+        <button class="blue-button" onclick="showMenu('うどん・そば')">うどん・そば</button>
+        <button class="blue-button" onclick="showMenu('ラーメン')">ラーメン</button>
+        <button class="blue-button" onclick="showMenu('定食')">定食</button>
+        <button class="blue-button" onclick="showMenu('日替わり')">日替わり</button>
+
+
+        <hr>
+
+        <!-- メニュー表示エリア -->
+        <div id="menuContainer"></div>
+        <div id="modal"></div>
+        <div id="answer" class="menu-container">
+          <!-- ここにメニューカードが追加されます -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script> <!-- JavaScriptファイルへのリンク -->
+
+</body>
+</html>
