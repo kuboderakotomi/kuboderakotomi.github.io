@@ -42,23 +42,26 @@
         <br>
         <br>
         <br>
-        　<!-- ボタンの追加 -->
-        <button class="blue-button" onclick="showMenu('全メニュー')">全メニュー</button>
-        <button class="blue-button" onclick="showMenu('カレー')">カレー</button>
-        <button class="blue-button" onclick="showMenu('パスタ')">パスタ</button>
-        <button class="blue-button" onclick="showMenu('うどん・そば')">うどん・そば</button>
-        <button class="blue-button" onclick="showMenu('ラーメン')">ラーメン</button>
-        <button class="blue-button" onclick="showMenu('定食')">定食</button>
-        <button class="blue-button" onclick="showMenu('日替わり')">日替わり</button>
 
-
-        <hr>
+        <!-- ボタンの追加 -->
+        <button class="blue-button" id="allMenuButton">全メニュー</button>
+        <button class="blue-button" id="curryButton">カレー</button>
+        <button class="blue-button" id="pastaButton">パスタ</button>
+        <button class="blue-button" id="udonButton">うどん・そば</button>
+        <button class="blue-button" id="ramenButton">ラーメン</button>
+        <button class="blue-button" id="teisyokuButton">定食</button>
+        <button class="blue-button" id="higawariButton">日替わり</button>
 
         <!-- メニュー表示エリア -->
         <div id="menuContainer"></div>
         <div id="modal"></div>
-        <div id="answer" class="menu-container">
-          <!-- ここにメニューカードが追加されます -->
+        <div id="answer" class="menu-container"></div>
+        <br>
+
+        <!-- JavaScriptファイルへのリンク -->
+        <script src="script.js"></script>
+          </div>
+
         </div>
 
       </div>
