@@ -141,13 +141,11 @@ document.getElementById('teisyokuButton').addEventListener('click', function() {
   showMenuByTag('teisyoku');
 });
 
-document.getElementById('higawariButton').addEventListener('click', function() {
-  showMenuByTag('higawari');
-});
-
 document.getElementById('sonotaButton').addEventListener('click', function() {
   showMenuByTag('sonota');
 });
+
+
 
 
 // 初期表示
