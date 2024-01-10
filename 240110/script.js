@@ -13,20 +13,33 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-//scroll_effect
-$(window).scroll(function () {
-  var scrollAnimationElm = document.querySelectorAll('.scroll_up');
-  var scrollAnimationFunc = function () {
-    for (var i = 0; i < scrollAnimationElm.length; i++) {
-      var triggerMargin = 10;
-      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-        scrollAnimationElm[i].classList.add('on');
+document.addEventListener('DOMContentLoaded', function() {
+  // スクロール時のイベントリスナーを追加
+  window.addEventListener('scroll', function() {
+    let elements = document.querySelectorAll('.scroll_up');
+
+    elements.forEach(function(element) {
+      // 要素の位置がビューポートの上端からの距離としてどれだけのスクロールが発生しているかを取得
+      let positionFromTop = element.getBoundingClientRect().top;
+
+      // ビューポートの高さの3/4までスクロールすると要素が表示されるようにする
+      if (positionFromTop - window.innerHeight <= -window.innerHeight / 4) {
+        element.style.opacity = '1';
       }
-    }
-  }
-  window.addEventListener('load', scrollAnimationFunc);
-  window.addEventListener('scroll', scrollAnimationFunc);
+    });
+  });
 });
+
+document.addEventListener('scroll', function() {
+  const elements = document.querySelectorAll('.scroll_up');
+
+  elements.forEach((element) => {
+    if (window.scrollY + window.innerHeight > element.offsetTop + 100) { /* 100は適当なオフセットです。必要に応じて調整してください。 */
+      element.classList.add('visible');
+    }
+  });
+});
+
 
 
 //menu
