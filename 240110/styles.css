@@ -168,6 +168,15 @@ body {
   }
 }
 
+.fade-in-image {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.fade-in-image.visible {
+  opacity: 1; /* スクロール時に透明度を1に変更して表示 */
+}
+
+
 
 .scroll_up {
   opacity: 0;          /* 初期状態では非表示 */
@@ -178,5 +187,47 @@ body {
 .visible {
   opacity: 1;          /* スクロールに応じて表示 */
   transform: translateY(0); /* スクロールに応じて元の位置に移動 */
+}
+
+.image-section {
+  display: flex;          /* Flexboxを使用 */
+  align-items: center;    /* 垂直方向の中央揃え */
+  margin-bottom: 20px;   /* 必要に応じてマージンを追加 */
+}
+
+.image-section img {
+  margin-right: 10px;    /* 画像とテキスト間の間隔を設定 */
+}
+
+.image-section h5 {
+  margin: 0;              /* h5要素のデフォルトのマージンをリセット */
+}
+
+
+.image-container {
+  display: inline-block;  /* インラインブロック要素として表示 */
+  vertical-align: top;   /* 縦方向の揃えを上部に設定 */
+  width: 40%;             /* 画像の半分の幅に設定（2つの画像を横に並べるため）*/
+  box-sizing: border-box; /* ボックスモデルの計算にボーダーとパディングを含める */
+  padding: 10px;          /* 必要に応じてパディングを追加 */
+  margin: 20px;             /* 必要に応じてマージンを追加 */
+  text-align: center;     /* 内容を中央揃えにする */
+}
+.image-container img {
+  width: 100%;            /* 画像の幅を100%に設定 */
+  height: auto;           /* アスペクト比を維持しながら高さを自動調整 */
+}
+
+.img-container {
+  display: inline-block;  /* インラインブロック要素として表示 */
+  vertical-align: top;   /* 縦方向の揃えを上部に設定 */
+  box-sizing: border-box; /* ボックスモデルの計算にボーダーとパディングを含める */
+  padding: 10px;          /* 必要に応じてパディングを追加 */
+  margin: 20px;             /* 必要に応じてマージンを追加 */
+  text-align: center;     /* 内容を中央揃えにする */
+}
+.img-container img {
+  width: 180%;            /* 画像の幅を180%に設定 */
+  height: auto;           /* アスペクト比を維持しながら高さを自動調整 */
 }
 

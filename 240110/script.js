@@ -1,34 +1,32 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    const image = document.querySelector('.fade-in-image');
+    const imagePosition = image.getBoundingClientRect().top;
+    const viewPortHeight = window.innerHeight;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+    if (imagePosition < viewPortHeight * 0.75) { // 画像がビューポートの75%までスクロールされたら
+      image.classList.add('visible'); // 画像に visible クラスを追加して表示
     }
   });
-}
+});
 
 document.addEventListener('DOMContentLoaded', function() {
-  // スクロール時のイベントリスナーを追加
+  // 画像の要素を取得
+  var image = document.querySelector('.fade-in-image');
+
+  // スクロールイベントリスナーを追加
   window.addEventListener('scroll', function() {
-    let elements = document.querySelectorAll('.scroll_up');
+    // 画像の位置を取得
+    var imageTop = image.getBoundingClientRect().top;
 
-    elements.forEach(function(element) {
-      // 要素の位置がビューポートの上端からの距離としてどれだけのスクロールが発生しているかを取得
-      let positionFromTop = element.getBoundingClientRect().top;
-
-      // ビューポートの高さの3/4までスクロールすると要素が表示されるようにする
-      if (positionFromTop - window.innerHeight <= -window.innerHeight / 4) {
-        element.style.opacity = '1';
-      }
-    });
+    // 画像が画面の中央に達した場合、透明度を1（完全に表示）にする
+    // ここでは、画像がビューポートの上端から半分以上スクロールしたときに画像を表示させます
+    if (imageTop < window.innerHeight / 2) {
+      image.style.opacity = '1';
+    }
   });
 });
+
 
 document.addEventListener('scroll', function() {
   const elements = document.querySelectorAll('.scroll_up');
