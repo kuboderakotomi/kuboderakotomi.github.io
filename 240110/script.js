@@ -14,6 +14,8 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+
+
 //menu
 let menu = [
   { name: "カレーライス", price: "350円", where: "厚生棟3階", tags: ["curry"], png: "https://github.com/kuboderakotomi/kuboderakotomi.github.io/assets/104044292/f808dc1e-ebba-4250-9638-da68196cb2e5" },
