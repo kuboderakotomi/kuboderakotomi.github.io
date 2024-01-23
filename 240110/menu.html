@@ -8,18 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="UTF-8">
   <title>TUT学食</title>
-  <link rel="stylesheet" href="styles.css"> <!-- CSSファイルへのリンク -->
+  <link rel="stylesheet" href="styles.css">
   <style>
     .content-container {
-      margin-left: 20px;  /* 左側のマージン */
-      margin-right: 20px; /* 右側のマージン */
+      margin-left: 20px;
+      margin-right: 20px;
     }
   </style>
 
 </head>
 <body>
 
-<!-- ヘッダー部分 -->
 <header class="site-header">
   <div class="header-content container">
     <div class="logo">
@@ -29,16 +28,15 @@
     <nav class="main-navigation">
       <ul>
         <br>
-        　<li><a href="home.html" onclick="openTab('home')">ホーム</a></li>
-        <li><a href="menu.html" onclick="openTab('menu')">メニュー</a></li>
-        <li><a href="events.html" onclick="openTab('events')">イベント</a></li>
-        <li><a href="location.html" onclick="openTab('location')">食堂Information</a></li>
+        　<li><a href="home.html">ホーム</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="events.html">イベント</a></li>
+        <li><a href="location.html">食堂Information</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<!-- コンテンツ部分 -->
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
@@ -50,7 +48,6 @@
         <h1>メニュー</h1>
         <hr>
 
-        <!-- ボタンの追加 -->
         <button class="blue-button" id="allMenuButton">全メニュー</button>
         　<button class="blue-button" id="curryButton">カレー</button>
         　<button class="blue-button" id="pastaButton">パスタ</button>
@@ -59,24 +56,18 @@
         　<button class="blue-button" id="teisyokuButton">定食</button>
         　<button class="blue-button" id="sonotaButton">その他</button>
 
-        <!-- メニュー表示エリア -->
         <div id="menuContainer"></div>
         <div id="modal"></div>
         <div id="answer" class="menu-container"></div>
         <br>
 
-        <!-- JavaScriptファイルへのリンク -->
         <script src="script.js"></script>
-          </div>
-
-        </div>
-
       </div>
     </div>
   </div>
 </div>
 
-<script src="script.js"></script> <!-- JavaScriptファイルへのリンク -->
+<script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

@@ -2,71 +2,62 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
 .main-navigation a {
-  color: #333; /* ナビゲーションリンクのデフォルトのテキスト色を黒に設定 */
-  text-decoration: none; /* 下線を削除 */
+  color: #333;
+  text-decoration: none;
 }
 
-/* ナビゲーションメニューにホバー時のスタイルを追加 */
 .main-navigation a:hover {
-  color: #ffffcc; /* ホバー時のテキスト色を少し暗めの黒に設定 */
-  text-decoration: underline; /* ホバー時に下線を追加 */
+  color: #ffffcc;
+  text-decoration: underline;
 }
-
 
 .site-header {
-  background-color: #000066; /* ヘッダーの背景色を設定 */
-  color: white; /* ヘッダー上のテキスト色を黒に設定 */
-  padding: 10px 0; /* ヘッダーの内部余白を追加 */
+  background-color: #000066;
+  color: white;
+  padding: 10px 0;
 }
 
-/* ヘッダー内のコンテンツの配置とスタイリング */
 .header-content {
-  display: flex; /* Flexboxを使用して子要素を横並びに配置 */
-  align-items: center; /* 垂直方向の中央揃え */
-  justify-content: center; /* 水平方向の中央揃え */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  margin-right: 10px; /* ロゴとタイトルの間のスペースを追加 */
+  margin-right: 10px;
 }
 
 .title {
-  font-size: 24px; /* タイトルのフォントサイズを設定 */
+  font-size: 24px;
 }
 
 .main-navigation ul {
-  list-style-type: none; /* ナビゲーションリストのデフォルトのリストスタイルを削除 */
+  list-style-type: none;
   padding: 0;
 }
 
 .main-navigation ul li {
-  display: inline-block; /* ナビゲーション項目を水平に配置 */
-  margin-right: 20px; /* 各ナビゲーション項目の間のスペースを追加 */
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .main-navigation ul li:last-child {
-  margin-right: 0; /* 最後のナビゲーション項目の右側のマージンを削除 */
+  margin-right: 0;
 }
 
 .main-navigation a {
-  color: white; /* ナビゲーションリンクのテキスト色を設定 */
-  text-decoration: none; /* 下線を削除 */
+  color: white;
+  text-decoration: none;
 }
 
 .main-navigation a:hover {
-  text-decoration: underline; /* ホバー時に下線を追加 */
+  text-decoration: underline;
 }
 
-
-
-/* styles.css */
-
-/* アコーディオンスタイルの基本設定（青系統に変更） */
 .accordion {
-  background-color: #e6f7ff; /* 背景色を青系統に変更 */
-  color: #004d99;           /* テキスト色を濃い青に変更 */
+  background-color: #e6f7ff;
+  color: #004d99;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -78,12 +69,12 @@ body {
 }
 
 .active, .accordion:hover {
-  background-color: #b3d9ff; /* アクティブ時やホバー時の背景色を薄い青に変更 */
+  background-color: #b3d9ff;
 }
 
 .accordion:after {
   content: '\002B';
-  color: #6699cc; /* アイコンの色を青系統に変更 */
+  color: #6699cc;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -95,17 +86,17 @@ body {
 
 .panel {
   padding: 0 18px;
-  background-color: #e6f7ff; /* パネルの背景色を青系統に変更 */
+  background-color: #e6f7ff;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
 .site-header {
-  position: fixed; /* ヘッダーを固定する */
-  width: 100%;     /* ヘッダーの幅を100%に */
-  top: 0;          /* 上端にヘッダーを配置 */
-  z-index: 1000;   /* 他の要素よりも上に表示 */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 /* カードのスタイル */
@@ -173,61 +164,63 @@ body {
   transition: opacity 2s;
 }
 .fade-in-image.visible {
-  opacity: 1; /* スクロール時に透明度を1に変更して表示 */
+  opacity: 1;
 }
 
 
 
 .scroll_up {
-  opacity: 0;          /* 初期状態では非表示 */
-  transform: translateY(20px); /* 初期状態では少し下に移動 */
-  transition: opacity 0.8s ease, transform 0.8s ease; /* アニメーションの速度とイージングを設定 */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .visible {
-  opacity: 1;          /* スクロールに応じて表示 */
-  transform: translateY(0); /* スクロールに応じて元の位置に移動 */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .image-section {
-  display: flex;          /* Flexboxを使用 */
-  align-items: center;    /* 垂直方向の中央揃え */
-  margin-bottom: 20px;   /* 必要に応じてマージンを追加 */
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .image-section img {
-  margin-right: 10px;    /* 画像とテキスト間の間隔を設定 */
+  margin-right: 10px;
 }
 
 .image-section h5 {
-  margin: 0;              /* h5要素のデフォルトのマージンをリセット */
+  margin: 0;
 }
 
 
 .image-container {
-  display: inline-block;  /* インラインブロック要素として表示 */
-  vertical-align: top;   /* 縦方向の揃えを上部に設定 */
-  width: 40%;             /* 画像の半分の幅に設定（2つの画像を横に並べるため）*/
-  box-sizing: border-box; /* ボックスモデルの計算にボーダーとパディングを含める */
-  padding: 10px;          /* 必要に応じてパディングを追加 */
-  margin: 20px;             /* 必要に応じてマージンを追加 */
-  text-align: center;     /* 内容を中央揃えにする */
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
 }
 .image-container img {
-  width: 100%;            /* 画像の幅を100%に設定 */
-  height: auto;           /* アスペクト比を維持しながら高さを自動調整 */
+  width: 100%;
+  height: auto;
 }
 
 .img-container {
-  display: inline-block;  /* インラインブロック要素として表示 */
-  vertical-align: top;   /* 縦方向の揃えを上部に設定 */
-  box-sizing: border-box; /* ボックスモデルの計算にボーダーとパディングを含める */
-  padding: 10px;          /* 必要に応じてパディングを追加 */
-  margin: 20px;             /* 必要に応じてマージンを追加 */
-  text-align: center;     /* 内容を中央揃えにする */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
 }
+
 .img-container img {
-  width: 180%;            /* 画像の幅を180%に設定 */
-  height: auto;           /* アスペクト比を維持しながら高さを自動調整 */
+  width: 180%;
+  height: auto;
 }
 

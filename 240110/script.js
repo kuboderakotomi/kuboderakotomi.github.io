@@ -4,23 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const imagePosition = image.getBoundingClientRect().top;
     const viewPortHeight = window.innerHeight;
 
-    if (imagePosition < viewPortHeight * 0.75) { // 画像がビューポートの75%までスクロールされたら
-      image.classList.add('visible'); // 画像に visible クラスを追加して表示
+    if (imagePosition < viewPortHeight * 0.75) {
+      image.classList.add('visible');
     }
   });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  // 画像の要素を取得
-  var image = document.querySelector('.fade-in-image');
-
-  // スクロールイベントリスナーを追加
+  let image = document.querySelector('.fade-in-image');
   window.addEventListener('scroll', function() {
-    // 画像の位置を取得
-    var imageTop = image.getBoundingClientRect().top;
-
-    // 画像が画面の中央に達した場合、透明度を1（完全に表示）にする
-    // ここでは、画像がビューポートの上端から半分以上スクロールしたときに画像を表示させます
+    let imageTop = image.getBoundingClientRect().top;
     if (imageTop < window.innerHeight / 2) {
       image.style.opacity = '1';
     }
@@ -32,15 +25,12 @@ document.addEventListener('scroll', function() {
   const elements = document.querySelectorAll('.scroll_up');
 
   elements.forEach((element) => {
-    if (window.scrollY + window.innerHeight > element.offsetTop + 100) { /* 100は適当なオフセットです。必要に応じて調整してください。 */
+    if (window.scrollY + window.innerHeight > element.offsetTop + 100) {
       element.classList.add('visible');
     }
   });
 });
 
-
-
-//menu
 let menu = [
   { name: "カレーライス", price: "350円", where: "厚生棟3階", tags: ["curry"], png: "https://github.com/kuboderakotomi/kuboderakotomi.github.io/assets/104044292/f808dc1e-ebba-4250-9638-da68196cb2e5" },
   { name: "カレーライス大盛り", price: "430円", where: "厚生棟3階", tags: ["curry"], png: "https://github.com/kuboderakotomi/kuboderakotomi.github.io/assets/104044292/f808dc1e-ebba-4250-9638-da68196cb2e5" },
@@ -115,35 +105,11 @@ let menu = [
   { name: "小ライス", price: "120円", where: "厚生棟4階", tags: ["sonota"], png: "https://github.com/kuboderakotomi/kuboderakotomi.github.io/assets/104044292/2f1929b7-3312-4982-9123-92b2872c9c11" },
   { name: "大盛り（ご飯・麺）", price: "120円", where: "厚生棟4階", tags: ["sonota"], png: "https://github.com/kuboderakotomi/kuboderakotomi.github.io/assets/104044292/2f1929b7-3312-4982-9123-92b2872c9c11" }
 
-  // ... 他のメニューも同様にタグを追加
+
 ];
 
 
 let answer = document.querySelector('#answer');
-
-function showMenuByTag(tag = '') {
-  let filteredMenu;
-
-  if (tag === '') {
-    filteredMenu = menu; // タグが指定されていない場合、すべてのメニューを表示
-  } else {
-    filteredMenu = menu.filter(item => item.tags.includes(tag));
-  }
-
-  let outputHtml = '';
-  filteredMenu.forEach(item => {
-    outputHtml += `
-      <div class="menu-card">
-        <img src="${item.png}" alt="${item.name}">
-        <h4>${item.name}:</h4>
-        <p>${item.price} - ${item.where}</p>
-      </div>
-    `;
-  });
-  document.getElementById('answer').innerHTML = outputHtml;
-}
-
-// ボタンのクリックイベント
 document.getElementById('allMenuButton').addEventListener('click', function() {
   showMenuByTag('');
 });
@@ -172,9 +138,32 @@ document.getElementById('sonotaButton').addEventListener('click', function() {
 });
 
 
+function showMenuByTag(tag = '') {
+  let filteredMenu;
+
+  if (tag === '') {
+    filteredMenu = menu;
+  } else {
+    filteredMenu = menu.filter(item => item.tags.includes(tag));
+  }
+
+  let outputHtml = '';
+  filteredMenu.forEach(item => {
+    outputHtml += `
+      <div class="menu-card">
+        <img src="${item.png}" alt="${item.name}">
+        <h4>${item.name}:</h4>
+        <p>${item.price} - ${item.where}</p>
+      </div>
+    `;
+  });
+
+  document.getElementById('answer').innerHTML = outputHtml;
+}
+
 
 
 // 初期表示
 window.onload = function() {
-  showMenuByTag(''); // 初期表示ではすべてのメニューを表示
+  showMenuByTag('');
 };

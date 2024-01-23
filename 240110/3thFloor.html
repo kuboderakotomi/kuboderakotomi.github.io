@@ -18,6 +18,7 @@
 
 </head>
 <body>
+
 <header class="site-header">
   <div class="header-content container">
     <div class="logo">
@@ -27,10 +28,10 @@
     <nav class="main-navigation">
       <ul>
         <br>
-        　<li><a href="home.html" onclick="openTab('home')">ホーム</a></li>
-        <li><a href="menu.html" onclick="openTab('menu')">メニュー</a></li>
-        <li><a href="events.html" onclick="openTab('events')">イベント</a></li>
-        <li><a href="location.html" onclick="openTab('location')">食堂Information</a></li>
+        　<li><a href="home.html">ホーム</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="events.html">イベント</a></li>
+        <li><a href="location.html">食堂Information</a></li>
       </ul>
     </nav>
   </div>
@@ -42,51 +43,20 @@
       <div class="content-container">
         <br>
         <br>
-        <div class="img-container">
-        <img src="img/index-entrance01.jpg" alt="キャンパス"  class="fade-in-image">
-        </div>
         <br>
-        <h1>ホーム</h1>
+        <br>
+        <h1>厚生棟3F「802 TERRACE」メニュー</h1>
         <hr>
-        <div class="scroll_up">
-          <h3>このWebサイトは東京工科大学の学食・昼食について記載しています。</h3>
-        </div>
-        <div class="scroll_up">
-          <br>
-          <h2>ホーム</h2>
-          <h4>このサイトはTUT学食に関する情報を提供します。最新のメニュー、キッチンカーのイベント、そして昼食を取れる場所に関する情報を簡単に見ることができます。</h4>
-          <br>
-        </div>
-        <div class="scroll_up">
-          <h2>メニュー</h2>
-          <h4>厚生棟3F,4Fの学食のメニュー一覧を見ることができます。</h4>
-          <br>
-          <div class="image-container">
-            <img src="img/IMG_4743.jpeg" alt="3F">
-            <h5>厚生棟3F「802 TERRACE」</h5>
-          </div>
-          <div class="image-container">
-            <img src="img/IMG_4745.jpeg" alt="4F">
-            <h5>厚生棟4F「ROSE kitchen」</h5>
-          </div>
-          <br>
-        </div>
-        <div class="scroll_up">
-          <h2>イベント</h2>
-          <h4>キッチンカー情報を見ることができます。</h4>
-          <br>
-        </div>
-        <div class="scroll_up">
-          <h2>食堂Information</h2>
-          <h4>昼食を取れる場所に関する情報を簡単に見ることができます。</h4>
-          <br>
-        </div>
-
-
+        <div id="menuContainer"></div>
+        <div id="modal"></div>
+        <div id="answer" class="menu-container"></div>
+        <br>
+        <script src="script.js"></script>
       </div>
     </div>
   </div>
 </div>
+
 
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -98,6 +68,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
 </body>
 </html>
